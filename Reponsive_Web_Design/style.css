@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-width: 300px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background: hsla(0, 0%, 75%, 0.1);
+    padding: 2rem 0;
+    justify-content: space-evenly;
+    
+}
+h1 h2 h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    
+}
+h1{
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 5px;
+}
+.subtitle{
+    font-weight: 1000;
+    color: rgb(0, 187, 187);
+    margin: 0;
+    font-size: 1rem;
+}
+.article-title{
+    font-size: 1.5rem;
+}
+.article-read-more,
+.article-info{
+    font-family: 0.875rem;
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav li{
+    margin:0 1rem;
+}
+nav a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(24, 24, 24);
+}
+nav a:hover,
+nav a:focus{
+    cursor: pointer;
+    color:red;
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    border: 10px solid rgb(209, 192, 4);
+    margin: 10px;
+    height: fit-content;
+    justify-content: space-between;
+    
+}
+.container main{
+    margin-right: 10px;
+    
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.container main .article-featured{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container a{
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(0, 156, 156);
+}
+.container a:hover{
+    cursor: pointer; 
+    text-decoration: underline;
+}
+.container main .hr-element{
+    height: 0.4px;
+    
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid  rgba(184, 184, 184, 0.416);
+}
+.container main .article-featured p{
+    text-align: left ;
+
+}
+.container main .article-featured .article-image{
+    width: 100%;
+    height: 200px;
+
+}
+.container main .article-recent{
+    display: flex;
+    height: 300px;
+    
+}
+.container main .article-recent .article-recent-main .article-title{
+    position: relative;
+    margin: 0;
+    top: 0;
+    
+}
+
+.container main .article-recent .article-recent-image{
+    width: 30%;
+    height: 300px;
+}
+.container main .article-recent .article-recent-image img{
+    height:100%;
+    width: 100%;
+    display: flex;
+
+}
+.container main .article-recent .article-recent-main{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    width: 70%;
+    align-items: flex-start;
+    margin: 0 20px; 
+    
+
+}
+
+.container .sidebar{
+    position: relative;
+    right: 0;
+    margin-left: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .sidebar .slidebar-widget{
+    border: 10px solid rgb(194, 194, 194);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+}
+.container .sidebar .slidebar-widget .widget-title{
+    margin-bottom: 0;
+    font-size: 1em;
+}
+.container .sidebar .slidebar-widget img{
+    height: 100px;
+    width: 70%;
+}
+.container .sidebar .slidebar-widget .widget-body{
+    width: 70%;
+} 
+.container .sidebar .slidebar-widget p{
+    text-align:left;
+    margin-left:5px;
+    font-size: 0.8em;
+}
+.container .sidebar .slidebar-widget  .hr-element{
+    height: 0.4px;
+    
+    margin-bottom: 10px;
+    width: 90%;
+    border: 2px solid  rgba(184, 184, 184, 0.416);
+}
+.container .sidebar .slidebar-widget .widget-recent-post img{
+    height: 100px;
+    width: 70%;
+}
+
+
+
+@media(max-width:991px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav li{
+        margin:0.5rem;
+    }
+}
+
